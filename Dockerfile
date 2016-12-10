@@ -5,7 +5,7 @@ ENV APP_DIR /usr/src/app
 # Update the system
 RUN yum install epel-release -y \
 	&& yum update -y \
-  && yum install -y nodejs rubygem-sass libsass \
+  && yum install -y nodejs \
   && yum clean all
 
 # Setup the needed tools
@@ -20,5 +20,3 @@ WORKDIR ${APP_DIR}
 RUN chown -R govithub:govithub ${APP_DIR}
 
 USER govithub
-
-CMD [ "ionic", "server", "--all" ]
