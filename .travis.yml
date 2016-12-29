@@ -9,4 +9,3 @@ deploy:
   app: yoyosan-stopcozi-web
   on:
     repo: yoyosan/StopCozi-web
-    all_branches: true
