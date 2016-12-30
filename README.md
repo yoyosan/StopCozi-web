@@ -2,7 +2,21 @@
 
 Acesta este proiectul de frontend web pentru Sistemul de Programări Online realizat de Gov IT Hub (http://ithub.gov.ro).
 
-## Instalare
+## Servicii externe de CI/CD
+
+Conform practicilor de Continuous Integration(Travis CI) și Continuous Delivery(Travis CI/Heroku), la fiecare push în
+branch-ul master sau orice alt branch(inclusiv pull request) vor rula următoarele servicii:
+
+1. Travis CI care se ocupă cu:
+  * executarea testelor
+  * deployment pe Heroku dacă testele s-au executat cu succes
+  * raportarea către responsabilii proiectului dacă executarea testelor a eșuat
+2. Heroku, care se ocupă de:
+    * găzduirea și servirea interfeței aplicației web
+
+Aplicația poate fi accesată [aici](https://yoyosan-stopcozi-web.herokuapp.com/).
+
+## Instalare locală
 
 Puteți urma fie instalarea manuală, fie cea pentru platforma Docker.
 
